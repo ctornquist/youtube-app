@@ -26,7 +26,17 @@ const SearchTab = () => {
           headerTintColor: '#fff',
         }}
       />
-      <Stack.Screen name="Detail" component={VideoDetail} />
+      <Stack.Screen
+        name="Detail"
+        component={VideoDetail}
+        options={{
+          title: 'Youtube Detail',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+        }}
+      />
     </Stack.Navigator>
   );
 };
